@@ -1,0 +1,1472 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    font-family: 'Open Sans', 'Heebo', sans-serif;
+}
+
+/* start header */
+.header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header img {
+    float: left;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+.header .links {
+    float: right;
+    position: relative;
+}
+
+.header .links::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 55px;
+    background-color: transparent;
+    top: 7;
+    right: 90px;
+    display: none;
+}
+
+.header .links:hover::after {
+    display: block;
+}
+
+.header .clear-both {
+    clear: both;
+}
+
+.header .button-container {
+    float: right;
+    margin: -43px 247px 0;
+}
+
+.header .button-container .btn {
+    width: 70px;
+    height: 37px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 3px solid green;
+    background-color: transparent;
+}
+
+.header .button-container .btn2 {
+    margin-left: 20px;
+}
+
+.header .button-container .btn:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.header .links .icon {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links .icon .line {
+    width: 40px;
+    height: 4px;
+    background-color: green;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.header .links .icon .line2 {
+    width: 25px;
+    margin-left: auto;
+}
+
+.header .links:hover .line2 {
+    width: 40px;
+}
+
+.header .links ul {
+    position: absolute;
+    top: 62px;
+    right: 90px;
+    list-style: none;
+    width: 160px;
+    display: none;
+}
+
+.header .links ul li {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    position: relative;
+}
+
+.header .links ul .li111 {
+    position: relative;
+}
+
+.header .links ul .li111:hover .pointer {
+    border-color: transparent transparent black transparent;
+}
+
+.header .links .pointer {
+    position: absolute;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+    z-index: 2;
+    right: 10px;
+    top: -35px;
+    display: none;
+    z-index: -1;
+}
+
+.header .links:hover .pointer {
+    display: block;
+}
+
+.header .links ul .li1 {
+    border-bottom: 1px solid black;
+}
+
+.header .links ul li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.header .links ul li:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.header .links ul li p {
+    position: absolute;
+    z-index: 2;
+}
+
+.header .links ul li p a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: black;
+    transition: 0.3s;
+}
+
+.header .links ul li p a:active {
+    color: rgb(3, 208, 3);
+}
+
+.header .links ul li:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:hover a {
+    color: white;
+}
+
+/* end header */
+
+
+/* start home */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategray;
+    position: relative;
+    background-image: url(../img/background3.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.home .container .home-title1 {
+    width: 800px;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    color: black;
+    position: relative;
+}
+
+.home .container .home-title2 {
+    width: 800px;
+    font-size: 59px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    color: white;
+    position: absolute;
+    top: -2px;
+}
+
+.home .container .home-p {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.home .container .home-btn {
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 3px solid green;
+    background-color: transparent;
+    color: white;
+}
+
+.home .container .home-btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.home .container .home-btn2 {
+    margin-left: 20px;
+}
+/* end home */
+
+
+/* start food */
+.food {
+    text-transform: capitalize;
+    width: 100%;
+    height: 160vh;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 90px;
+}
+
+.food .container {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.food .container .line {
+    width: 890px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto 150px;
+}
+
+.food .container .food-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+    word-spacing: 5px;
+}
+
+.food .container .dish-container {
+    width: 95%;
+    height: 320px;
+    margin: 135px auto 0;
+}
+
+.food .container .dish-container .dish {
+    float: left;
+    width: 28%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.food .container .dish-container .dish1 {
+    margin-left: 4%;
+}
+
+.food .container .dish-container .dish2 {
+    margin: 0 4%;
+}
+
+.food .container .dish-container .dish .image {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.food .container .dish-container .dish img {
+    width: 80%;
+}
+
+.food .container .dish-container .dish .text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000009b;
+    padding: 30% 20%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.food .container .dish-container .dish:hover .text-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.food .container .dish-container .dish .text-container .meal-name {
+    font-size: 35px;
+    color: rgb(3, 208, 3);
+    margin-bottom: 5px;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    bottom: 5px;
+}
+
+.food .container .dish-container .dish:hover .meal-name {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+.food .container .dish-container .dish .text-container .meal-disc {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    bottom: 0px; 
+    transition-delay: 0.4s;
+}
+
+.food .container .dish-container .dish:hover .meal-disc {
+    visibility: visible;
+    opacity: 1;
+    bottom: 10;
+}
+
+.food .container .dish-container .dish .text-container .icon-con {
+    width: 97px;
+    height: 92px;
+    margin: auto;
+    transition: 0.2s;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    bottom: -5px;
+    transition-delay: 0.6s;
+}
+
+.food .container .dish-container .dish:hover .icon-con {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon2 {
+    left: 55px;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(3, 208, 3);
+    transition: 0.2s;
+    margin: 0;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon a i {
+    color: white;
+    line-height: 40px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon:hover a {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon:hover a i {
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon1:hover .icon-info1{
+    visibility: visible;
+    opacity: 1;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon2:hover .icon-info2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon-info1 {
+    color: rgba(255, 255, 255, 0.8);
+    width: 95px;
+    font-size: 13px;
+    position: absolute;
+    bottom: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.food .container .dish-container .dish .text-container .icon-con .icon-info2 {
+    color: rgba(255, 255, 255, 0.8);
+    width: 97px;
+    font-size: 13px;
+    position: absolute;
+    bottom: -50px;
+    left: -56px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+
+}
+
+.food .container .dish-container .left-arrow {
+    position: relative;
+}
+
+.food .container .dish-container .left-arrow .main-dishs {
+    position: absolute;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    width: 200px;
+    z-index: 10;
+    top: -60px;
+    left: 471px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+
+.food .container .dish-container:hover .left-arrow .main-dishs {
+    visibility: visible;
+    opacity: 1;
+}
+
+.food .container .dish-container .left-arrow::before {
+    content: "";
+    position: absolute;
+    border-width: 45px;
+    border-style: solid;
+    border-color: transparent gray transparent transparent;
+    z-index: 4;
+    left: -107px;
+    bottom: -205px;
+    transition: 0.3s;
+}
+
+.food .container .dish-container .left-arrow::after {
+    content: "";
+    position: absolute;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent whitesmoke transparent transparent;
+    z-index: 4;
+    left: -67px;
+    bottom: -185px;
+}
+
+.food .container .dish-container .right-arrow {
+    position: relative;
+}
+
+.food .container .dish-container .right-arrow::before {
+    content: "";
+    position: absolute;
+    border-width: 45px;
+    border-style: solid;
+    border-color: transparent transparent transparent gray;
+    z-index: 4;
+    right: -107px;
+    bottom: -205px;
+    transition: 0.3s;
+}
+
+.food .container .dish-container .right-arrow::after {
+    content: "";
+    position: absolute;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent transparent transparent whitesmoke;
+    z-index: 4;
+    right: -67px;
+    bottom: -185px;
+}
+
+.food .container .dish-container .left-arrow:hover::before {
+    border-color: transparent #0000009b transparent transparent;
+}
+
+.food .container .dish-container .right-arrow:hover::before {
+    border-color: transparent transparent transparent #0000009b;
+}
+/* end food */
+
+
+/* start features */
+.features {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.features .container .line {
+    width: 300px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+}
+
+.features .features-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.features .container .feat-container {
+    width: 1100px;
+    height: 300px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.features .container .feat-container .feat {
+    float: left;
+    width: 30%;
+    height: 250px;
+    border: 1px solid black;
+    margin: auto;
+    padding-top: 35px;
+    position: relative;
+}
+
+.features .container .feat-container .feat2 {
+    margin: 0 5%;
+}
+
+.elm-con {
+    position: absolute;
+    z-index: 3;
+}
+
+.features .container .feat-container .feat::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: #000000cd;
+    transition: 0.5s;
+}
+
+.features .container .feat-container .feat:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.features .container .feat-container .feat:hover h2 {
+    color: white;
+}
+
+.features .container .feat-container .feat:hover i {
+    color: rgb(3, 208, 3);
+}
+
+.features .container .feat-container .feat:hover a {
+    color: rgb(3, 208, 3);
+}
+
+.features .container .feat-container .feat i {
+    font-size: 40px;
+    color: green;
+}
+
+.features .container .feat-container .feat h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 10px;
+    font-weight: 100;
+}
+
+.features .container .feat-container .feat p {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 13px;
+    font-weight: 100;
+    color: #777;
+}
+
+.features .container .feat-container .feat a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: green;
+}
+/* end features */
+
+
+/* start about */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+}
+
+.about .container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about .container .line {
+    width: 227px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.about .about-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.about .container .element-container1 {
+    overflow: auto;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.about .container .element-container2 {
+    overflow: auto;
+    width: 1200px;
+    margin: auto;
+}
+
+.about .container .element {
+    width: 32%;
+    float: left;
+    overflow: auto;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    background-color: white;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.about .container .element .elm-com {
+    position: relative;
+    z-index: 1;
+}
+
+.about .container .element2 {
+    margin: 0 2%;
+}
+
+.about .container .element::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #000000cd;
+    border-radius: 15px;
+    transition: 0.5s;
+    /* z-index: -1; */
+}
+
+.about .container .element:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.about .container .element:hover h2 {
+    color: white;
+}
+
+.about .container .element:hover i {
+    color: rgb(3, 208, 3);
+}
+
+.about .container .element .icon-container {
+    float: left;
+    width: 15%;
+    font-size: 30px;
+    color: green;
+}
+
+.about .container .element .text-container {
+    float: left;
+    width: 85%;
+    text-align: left;
+}
+
+.about .container .element .text-container h2 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about .container .element .text-container p {
+    text-transform: capitalize;
+    color: #777;
+}
+/* end about */
+
+
+/* start why */
+.why {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    padding: 100px;
+}
+
+.why .container .text-container {
+    float: left;
+    margin-right: 100px;
+    width: 700px;
+    padding-right: 10px;
+}
+
+.why .container .text-container .line {
+    width: 490px;
+    height: 4px;
+    background-color: green;
+    margin: 20px 0;
+    margin-bottom: 50px;
+}
+
+.why .container .text-container h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.why .container .text-container p {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 100;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.why .container .text-container .why-p {
+    display: inline-block;
+}
+
+.why .container .text-container i {
+    color: green;
+}
+
+.why .container .img-container {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.why .container .img-container .image {
+    width: 400px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+.why .container .img-container .image img {
+    width: 80%;
+    height: 100%;
+}
+
+.why .container .img-container ul {
+    list-style: none;
+
+}
+
+.why .container .img-container ul li {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+.why .container .img-container ul .li11 {
+    background-color: green;
+}
+
+.why .container .img-container ul li:hover {
+    background-color: green;
+}
+/* end why */
+
+
+/* start achievements */
+.achievements {
+    width: 100%;
+    height: 45vh;
+    background-image: url(../img/background2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.achievements .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.achievements .container .achiev-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.achievements .container .achiev-container .achiev {
+    width: 16%;
+    float: left;
+    color: white;
+    font-weight: bold;
+}
+
+.achievements .container .ch {
+    margin-right: 12%;
+}
+
+.achievements .container .achiev-container .achiev i {
+    color: rgb(3, 208, 3);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.achievements .container .achiev-container .achiev h2 {
+    font-size: 35px;
+}
+
+.achievements .container .achiev-container .achiev p {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+/* end achievements */
+
+
+/* start offers */
+.offers {
+    width: 100%;
+    height: 90vh;
+    background-color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.offers .container {
+    position: relative;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.offers .container .offers-title{
+    font-size: 60px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.offers .container .line {
+    width: 227px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.offers .container .offers-con {
+    overflow: auto;
+    width: 100%;
+}
+
+.offers .container .offers-con .offer {
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+}
+
+.offers .container .offers-con .offer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000cd;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.offers .container .offers-con .offer:hover::after {
+    height: 100%;
+}
+
+.offers .container .offers-con .offer:hover .details-con{
+    border-color: rgb(3, 208, 3);
+}
+
+.offers .container .offers-con .offer:hover button{
+    border-color: rgb(3, 208, 3);
+    color: white;
+}
+
+.offers .container .offers-con .offer:hover button:hover {
+    border-color: green;
+}
+
+.offers .container .offers-con .offer:hover{
+    color: white;
+}
+
+.offers .container .offers-con .offer2 {
+    margin: 0 5%;
+}
+
+.offers .container .offers-con .offer .p1 {
+    font-size: 20px;
+}
+
+.offers .container .offers-con .offer .details-con {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 1px solid green;
+    padding: 16px;
+}
+
+.offers .container .offers-con .offer .details-con .price {
+    transition: 0.1s;
+}
+
+.offers .container .offers-con .offer .p2 {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.offers .container .offers-con .offer button {
+    padding: 8px 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: 2px solid green;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* end offers */
+
+
+/* start owners */
+.owners {
+    width: 100%;
+    height: 45vh;
+    background-image: url(../img/background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: rgb(233, 233, 233);
+}
+
+.owners .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.owners .container .owners-con {
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.owners .container .owner {
+    float: left;
+    width: 30%;
+    text-align: left;
+    padding-left: 50px;
+    text-transform: capitalize;
+}
+
+.owners .container .owner1 {
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.owners .container .owner .owner-info {
+    overflow: auto;
+}
+
+.owners .container .owner img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.owners .container .owner .owner-name {
+    float: left;
+    text-align: left;
+}
+
+.owners .container .owner .owner-name h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 8px auto;
+}
+
+.owners .container .owner .owner-name h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(3, 208, 3);
+    font-weight: 100;
+    margin-top: -5px;
+}
+
+.owners .container .owner p {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/* end owners */
+
+
+/* start chef */
+.chefs {
+    width: 100%;
+    height: 90vh;
+    background-color: whitesmoke;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.chefs .container {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chefs .container .chefs-header {
+    text-align: center;
+}
+
+.chefs .container .chefs-header .chefs-title{
+    font-size: 60px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.chefs .container .chefs-header .line {
+    width: 500px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.chefs .container .chefs-con {
+    width: 84%;
+    overflow: auto;
+    margin-left: 8%;
+}
+
+.chefs .container .chefs-con .chef {
+    background-color: white;
+    float: left;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.chefs .container .chefs-con .chef2 {
+    margin: 0 5%;
+}
+
+.chefs .container .chefs-con .chef::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000cd;
+    transition: 0.6s;
+    visibility: hidden;
+    z-index: 5;
+    opacity: 0;
+}
+
+.chefs .container .chefs-con .chef:hover::after {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.chefs .container .chefs-con .chef:hover .chef-name{
+    color: white;
+}
+
+.chefs .container .chefs-con .chef .image {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.chefs .container .chefs-con .chef .image img {
+    width: 90%;
+    margin: 5%;
+}
+
+.chefs .container .chefs-con .chef .image .img-after {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.chefs .container .chefs-con .chef .image .icons {
+    position: absolute;
+    z-index: 6;
+    top: 14px;
+    right: 14px;
+    transition: 0.6s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.chefs .container .chefs-con .chef:hover .icons{
+    visibility: visible;
+    opacity: 1;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon {
+    width: 35px;
+    height: 35px;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon:hover{
+    padding: 3px;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon:hover a{
+    background-color: rgb(3, 208, 3);
+    width: 29px;
+    height: 29px;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon a i {
+    line-height: 35px;
+    font-size: 15px;
+    /* color: rgb(3, 208, 3); */
+    color: whitesmoke;
+}
+
+.chefs .container .chefs-con .chef .image .icons .icon:hover a i{
+    line-height: 29px;
+    font-size: 13px;
+    color: white;
+}
+
+.chefs .container .chefs-con .chef .chef-name {
+    font-size: 20px;
+    margin: 3px 0 5px;
+    color: black;
+    position: relative;
+    transition-delay: 0.2s;
+    z-index: 6;
+}
+
+.chefs .container .chefs-con .chef .chef-about {
+    font-size: 17px;
+    color: gray;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 6;
+}
+/* end chef */
+
+
+/* start branches */
+.branches {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.branches .container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.branches .container .branches-header {
+    margin-bottom: 60px;
+}
+
+.branches .container .branches-header .branches-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+
+.branches .container .branches-header .line {
+    width: 465px;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+}
+
+.branches .container .branches-con {
+    width: 100%;
+    overflow: auto;
+}
+
+.branches .container .branches-con .branch {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.branches .container .branches-con .branch .brn-con {
+    position: relative;
+    z-index: 3;
+}
+
+.branches .container .branches-con .branch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000000cd;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+.branches .container .branches-con .branch:hover::after {
+    height: 100%;
+}
+
+.branches .container .branches-con .branch:hover i {
+    color: rgb(3, 208, 3);
+}
+
+.branches .container .branches-con .branch:hover a {
+    color: rgb(3, 208, 3);
+}
+
+.branches .container .branches-con .branch:hover .branches-name {
+    color: white;
+}
+
+.branches .container .branches-con .branch2 {
+    margin: 0 5%;
+}
+
+.branches .container .branches-con .branch img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.branches .container .branches-con .branch i {
+    font-size: 13px;
+    color: green;
+}
+
+.branches .container .branches-con .branch .p1 {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.branches .container .branches-con .branch .branches-name {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.branches .container .branches-con .branch p {
+    color: #777;
+    margin: 0 0 10px;
+}
+
+.branches .container .branches-con .branch a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: green;
+}
+/* end branches */
+
+
+/* start footer */
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #000000cd;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer .container {
+    margin: auto;
+    position: relative;
+}
+
+.footer .container img {
+    width: 140px;
+    margin-bottom: 100px;
+}
+
+.footer .container .icon {
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+}
+
+.footer .container .icons {
+    position: absolute;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 60px;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .container a {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-color: rgb(0, 150, 0);;
+    border-radius: 50%;
+}
+
+.footer .container i {
+    line-height: 52px;
+    font-size: 22px;
+    color: white;
+}
+
+.footer .container .icon:hover a{
+    width: 48px;
+    height: 48px;
+    background-color: green;
+    margin: 2px;
+}
+
+.footer .container .icon:hover i {
+    line-height: 48px;
+    font-size: 19px;
+}
+/* end footer */
